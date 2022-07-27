@@ -1,0 +1,25 @@
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1260px;
+  padding: 64px 45px;
+  margin: 0 auto;
+}
