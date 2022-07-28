@@ -1,0 +1,155 @@
+.product {
+  display: flex;
+  width: 1170px;
+  height: 332px;
+  padding: 0px;
+  gap: 32px;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 268px;
+    height: 282px;
+
+    .product__left--title {
+      font-family: "Poppins";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: $main-black;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+
+    .product__left--desc {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      width: 269px;
+      height: 143px;
+      margin-bottom: 48px;
+
+      .left--text {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        color: $green;
+        order: 1;
+        align-self: stretch;
+      }
+    }
+
+    .product__left--btn {
+      display: flex;
+      flex-direction: row;
+      width: 167px;
+      height: 48px;
+      background: #f5f5f5;
+      border-radius: 12px;
+      align-items: center;
+      padding: 6px 16px;
+
+      .left__btn {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 22px;
+        border: none;
+        color: $main-black;
+        background: #f5f5f5;
+      }
+
+      .left__btn--img {
+        width: 8px;
+        height: 10px;
+      }
+    }
+  }
+
+  // product rigth
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+    .product__right--card {
+      width: 269px;
+      height: 323px;
+      margin-bottom: 9px;
+      @include card;
+
+      .right__card--img {
+        @include card-img;
+      }
+
+      .right__card--title {
+        @include card-title;
+      }
+
+      .right__card--subtitle {
+        @include card-subtitle;
+      }
+      .right__card--bottom {
+        @include card-bottom;
+      }
+    }
+
+    .product__right--card2 {
+      width: 268px;
+      height: 100%;
+      @include card;
+
+      .right__card--img {
+        position: relative;
+        @include card-img;
+
+        .card__abs {
+          position: absolute;
+          margin: 12px;
+          font-family: "Poppins";
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+          color: $green;
+        }
+      }
+
+      .right__card--title {
+        @include card-title;
+      }
+
+      .right__card--subtitle {
+        @include card-subtitle;
+      }
+      .right__card--bottom {
+        @include card-bottom;
+
+        .bottom--left {
+          display: flex;
+          flex-direction: column;
+
+          &::before {
+            content: "48.56";
+            position: absolute;
+            margin-top: 25px;
+            font-size: 12px;
+            line-height: 18px;
+            text-decoration-line: line-through;
+            color: #a9a9a9;
+          }
+        }
+      }
+    }
+  }
+}

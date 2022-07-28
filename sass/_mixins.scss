@@ -1,0 +1,69 @@
+@mixin card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+}
+
+@mixin card-btn {
+  width: 90px;
+  height: 36px;
+  padding: 6px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+  background: #6a983c;
+  border: 2px solid #46760a;
+  border-radius: 12px;
+}
+
+@mixin card-img {
+    width: 237px;
+    height: 180px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+@mixin card-title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 4px;
+    color: $main-black;
+}
+
+@mixin card-subtitle {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #575757;
+    margin-bottom: 21px;
+}
+
+@mixin card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Poppins";
+    font-weight: 600;
+
+    .bottom--left {
+      font-size: 18px;
+      line-height: 27px;
+      color: $main-black;
+    }
+
+    .bottom--right {
+      @include card-btn;
+    }
+}
