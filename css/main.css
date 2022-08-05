@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -801,4 +802,163 @@ body {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
   color: #a9a9a9;
+}
+
+.carusel * {
+  box-sizing: border-box;
+}
+.carusel body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+.carusel .big-container {
+  max-width: 1300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+.carusel .container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.carusel .customers__top {
+  display: flex;
+  margin-bottom: 38px;
+  align-items: center;
+  justify-content: space-between;
+}
+.carusel .customers__title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  color: #151515;
+}
+.carusel .customers__btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #151515;
+}
+.carusel .cr {
+  position: relative;
+}
+.carusel .cr::before {
+  content: "";
+  width: 88px;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+.carusel .cr::after {
+  content: "";
+  width: 88px;
+  background: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0));
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}
+.carusel .cr__list {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow-x: auto;
+  height: 222px;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.carusel .cr__list::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+.carusel .cr__item {
+  position: relative;
+  flex-shrink: 0;
+  padding: 24px 32px 40px;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #151515;
+  width: 369px;
+}
+.carusel .cr__item:last-child {
+  margin-right: 0;
+}
+.carusel .cr__item:first-child {
+  margin-left: 0;
+}
+.carusel .cr__text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.carusel .cr__name {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #a9a9a9;
+}
+.carusel .cr__image {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.carusel .cr__control {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151515;
+  padding: 0;
+  border: none;
+  padding: 8px 0px;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+.carusel .cr__left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.carusel .cr__right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.carusel .cr__icon {
+  width: 32px;
+  height: 32px;
 }/*# sourceMappingURL=main.css.map */
