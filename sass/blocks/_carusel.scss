@@ -1,5 +1,7 @@
 .carusel {
+  height: 426px;
   .customers {
+    padding-bottom: 70px;
     &__top {
       display: flex;
       margin-bottom: 38px;
@@ -11,7 +13,7 @@
       font-size: 18px;
       line-height: 27px;
       font-weight: 600;
-      color: $black;
+      color: $main-black;
     }
 
     &__btn {
@@ -22,12 +24,13 @@
       line-height: 23px;
       font-weight: 700;
       cursor: pointer;
-      color: $black;
+      color: $main-black;
     }
   }
 
   .cr {
     position: relative;
+    padding-bottom: 70px;
 
     &::before {
       content: "";
@@ -83,7 +86,7 @@
       border-radius: 12px;
       margin-left: 16px;
       margin-right: 16px;
-      color: $black;
+      color: $main-black;
       width: 369px;
     }
 
@@ -128,7 +131,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $black;
+      background-color: $main-black;
       padding: 0;
       border: none;
       padding: 8px 0px;

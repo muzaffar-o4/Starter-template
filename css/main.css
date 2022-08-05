@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -356,6 +355,17 @@ body {
   margin: 0 auto;
 }
 
+.big-container {
+  max-width: 1300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+a {
+  cursor: pointer;
+}
+
 .product {
   display: flex;
   width: 1170px;
@@ -410,6 +420,7 @@ body {
   border-radius: 12px;
   align-items: center;
   padding: 6px 16px;
+  cursor: pointer;
 }
 .product__left .product__left--btn .left__btn {
   font-family: "Poppins";
@@ -804,25 +815,11 @@ body {
   color: #a9a9a9;
 }
 
-.carusel * {
-  box-sizing: border-box;
+.carusel {
+  height: 426px;
 }
-.carusel body {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins";
-}
-.carusel .big-container {
-  max-width: 1300px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-.carusel .container {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+.carusel .customers {
+  padding-bottom: 70px;
 }
 .carusel .customers__top {
   display: flex;
@@ -848,6 +845,7 @@ body {
 }
 .carusel .cr {
   position: relative;
+  padding-bottom: 70px;
 }
 .carusel .cr::before {
   content: "";
